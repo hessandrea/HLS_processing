@@ -74,7 +74,7 @@ for (i in 1:length(tif_files)){
   #plot(ndvi)
   #plot(traps, colour= 'red', add=T)
   
-  indices <- c("ndvi", "ndwi_ga", "ndwi_mc", "ndwi_xu", "ndvi_1000", "ndwi_ga_1000", "ndwi_mc_1000", "ndwi_xu_1000")
+  indices <- c("ndvi", "ndwi_ga", "ndwi_mc", "ndwi_xu", "ndvi_buffer", "ndwi_ga_buffer", "ndwi_mc_buffer", "ndwi_xu_buffer")
   ndvi_traps <- raster::extract(ndvi, traps)
   ndwi_ga_traps <- raster::extract(ndwi_ga, traps)
   ndwi_mc_traps <- raster::extract(ndwi_mc, traps)
